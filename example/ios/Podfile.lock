@@ -1,0 +1,41 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_pingpp (0.2.1):
+    - Flutter
+    - Pingpp
+  - Pingpp (2.2.23):
+    - Pingpp/Alipay (= 2.2.23)
+    - Pingpp/Core (= 2.2.23)
+    - Pingpp/UnionPay (= 2.2.23)
+  - Pingpp/Alipay (2.2.23):
+    - Pingpp/Core
+    - PingppAlipaySDK (~> 15.5)
+  - Pingpp/Core (2.2.23)
+  - Pingpp/UnionPay (2.2.23):
+    - Pingpp/Core
+  - PingppAlipaySDK (15.6.4)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_pingpp (from `.symlinks/plugins/flutter_pingpp/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Pingpp
+    - PingppAlipaySDK
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_pingpp:
+    :path: ".symlinks/plugins/flutter_pingpp/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_pingpp: 4a2fe4c986629c17cc8f3b0fddd87c14af02b49e
+  Pingpp: 37559ecb34bf0d7a43e0ba9bba19fcb4653e8db3
+  PingppAlipaySDK: a4a6d489e2206445a12c56652a0ff7f95dca949b
+
+PODFILE CHECKSUM: 474313b5a4798cc74babb44e36bdf3bbbea9a318
+
+COCOAPODS: 1.8.4
