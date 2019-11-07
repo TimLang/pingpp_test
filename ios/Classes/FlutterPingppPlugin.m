@@ -17,7 +17,7 @@
 }
 
 - (void)createPayment:(FlutterMethodCall*)call result:(FlutterResult)result{
-    NSString *data = call.arguments[@"data"];
+    NSObject *data = call.arguments[@"data"];
         NSLog(@"0000000000000");
     [Pingpp createPayment:data appURLScheme:@"O2BRA" withCompletion:^(NSString *result2, PingppError *error) {
         NSLog(@"xxxxxxxxxxxxx");
@@ -28,7 +28,7 @@
         }
     }];
 
-    result(data);
+    result(@"hello");
 }
 
 @end
