@@ -16,10 +16,14 @@ class FlutterPingppPlugin: MethodCallHandler {
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
-    if (call.method == "getPlatformVersion") {
+    if (call.method == "createPayment") {
       result.success("Android ${android.os.Build.VERSION.RELEASE}")
     } else {
       result.notImplemented()
     }
+  }
+
+  void createPayment(call: MethodCall, result: Result) {
+
   }
 }

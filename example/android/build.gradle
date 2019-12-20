@@ -8,6 +8,9 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.5.8' // 使用微信支付时添加,具体版本参考微信官方文档或者 jcenter
+        implementation 'com.pingxx:pingpp-android-alipay:15.6.8' // 使用支付宝时添加
+        implementation 'com.pingxx:pingpp-android-upacp:3.4.8' // 使用银联支付时添加
     }
 }
 
@@ -15,6 +18,10 @@ allprojects {
     repositories {
         google()
         jcenter()
+
+        maven {
+            url  "https://dl.bintray.com/pingxx/maven"
+        }
     }
 }
 
