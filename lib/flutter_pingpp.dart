@@ -14,10 +14,14 @@ class FlutterPingpp {
   Function _onPayError;
 
 
-  createPayment(String data, Function onSuccess, Function onError) async {
+  createPayment(String data, Function onSuccess, Function onError, {String urlSchema=null}) async {
     _onPaySuccess = onSuccess;
     _onPayError = onError;
-    await _methodChannel.invokeMethod('createPayment', { "data": data });
+    Map<String, String> params = { "data": data };
+    if(urlSchema != null) {
+      params['urlSchema'] = urlSchema;
+    }
+    await _methodChannel.invokeMethod('createPayment', params);
   }
 
   Future<void> _callHandler(MethodCall call) async {
