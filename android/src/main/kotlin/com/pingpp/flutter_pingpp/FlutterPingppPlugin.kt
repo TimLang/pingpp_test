@@ -42,9 +42,9 @@ class FlutterPingppPlugin: MethodCallHandler, PluginRegistry.ActivityResultListe
   }
 
   fun createPayment(currentActivity: Activity, call: MethodCall, result: Result) {
-    var data = call.argument<String>("data")
-    print(">>>>>>>>>>>><<<<<<<<<<")
-    print(data)
+    var data: String = call.argument<String>("data")!!
+//    print(">>>>>>>>>>>><<<<<<<<<<")
+  //  print(data)
     Pingpp.createPayment(currentActivity, data)
   }
 
