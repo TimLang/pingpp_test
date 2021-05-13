@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.name             = 'flutter_pingpp'
   s.version          = '0.2.2'
   s.swift_version = '4.0'
-  s.summary          = 'Wechat SDK flutter plugin'
+  s.summary          = 'Pingpp SDK flutter plugin'
   s.description      = <<-DESC
 Wechat SDK flutter plugin
                        DESC
