@@ -18,7 +18,7 @@ Wechat SDK flutter plugin
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
 
-  s.dependency 'Pingpp'
-  s.ios.deployment_target = '8.0'
+  s.dependency 'Pingpp', '~> 2.2.34'
+  s.ios.deployment_target = '10.0'
   s.static_framework = true
 end
